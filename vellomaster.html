@@ -19,7 +19,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a{color:var(--gray);text-decoration:none;font-size:13px;font-weight:500;transition:color .2s}
 .nav-links a:hover{color:var(--lime)}
 .nav-right{display:flex;align-items:center;gap:12px}
-.nav-phone{color:var(--white);font-size:13px;font-weight:600;id:navPhone}
+.nav-phone{color:var(--white);font-size:13px;font-weight:600}
 .cart-btn{position:relative;background:var(--lime);color:var(--black);border:none;cursor:pointer;padding:10px 20px;border-radius:6px;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;transition:all .2s}
 .cart-btn:hover{background:var(--lime-dark)}
 .cart-count{position:absolute;top:-6px;right:-6px;background:#FF3355;color:#fff;width:18px;height:18px;border-radius:50%;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center}
@@ -156,9 +156,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:28px 48
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--lime);color:var(--black);padding:11px 24px;border-radius:7px;font-weight:700;font-size:13px;z-index:500;transition:transform .3s;pointer-events:none;white-space:nowrap}
 .toast.show{transform:translateX(-50%) translateY(0)}
 
-/* ════════════════════════════════════
-   ADMIN PANEL
-════════════════════════════════════ */
+/* ADMIN PANEL */
 .admin-overlay{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);display:none;align-items:flex-start;justify-content:flex-end}
 .admin-overlay.open{display:flex}
 .admin-panel{width:520px;height:100vh;background:#0A0C0E;border-left:1px solid rgba(198,241,53,.15);display:flex;flex-direction:column;overflow:hidden}
@@ -242,7 +240,6 @@ select.a-input{cursor:pointer}
 </head>
 <body>
 
-<!-- LOGIN for admin -->
 <div class="login-overlay" id="loginOverlay" style="display:none">
   <div class="login-box">
     <div class="login-logo">VELLO<em>MASTER</em></div>
@@ -255,7 +252,6 @@ select.a-input{cursor:pointer}
   </div>
 </div>
 
-<!-- NAV -->
 <nav>
   <div class="logo">VELLO<em>MASTER</em></div>
   <div class="nav-links">
@@ -271,7 +267,6 @@ select.a-input{cursor:pointer}
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
   <div class="hero-left">
@@ -293,15 +288,13 @@ select.a-input{cursor:pointer}
   </div>
 </section>
 
-<!-- FEATURES -->
 <div class="features">
   <div class="fi"><div class="fi-icon">🚲</div><div class="fi-title">БОЛЬШОЙ ВЫБОР</div><div class="fi-desc">Горные, городские, шоссейные, детские и электровелосипеды</div></div>
   <div class="fi"><div class="fi-icon">💰</div><div class="fi-title">ЛУЧШИЕ ЦЕНЫ</div><div class="fi-desc">Прямые поставки от официальных дилеров</div></div>
   <div class="fi"><div class="fi-icon">🔧</div><div class="fi-title">СЕРВИС И ЗАПЧАСТИ</div><div class="fi-desc">Профессиональное обслуживание любой сложности</div></div>
-  <div class="fi"><div class="fi-icon">📍</div><div class="fi-title">МАГАЗИН В КAРАГАНДЕ</div><div class="fi-desc">Приходите и тестируйте перед покупкой</div></div>
+  <div class="fi"><div class="fi-icon">📍</div><div class="fi-title">МАГАЗИН В КАРАГАНДЕ</div><div class="fi-desc">Приходите и тестируйте перед покупкой</div></div>
 </div>
 
-<!-- CATALOG -->
 <section id="catalog">
   <div class="sec-label">Каталог</div>
   <div class="sec-title">ПОПУЛЯРНЫЕ МОДЕЛИ</div>
@@ -318,7 +311,6 @@ select.a-input{cursor:pointer}
   <div class="product-grid" id="productGrid"></div>
 </section>
 
-<!-- SERVICE -->
 <section id="service" style="background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
   <div class="sec-label">Услуги</div>
   <div class="sec-title">СЕРВИС & РЕМОНТ</div>
@@ -331,7 +323,6 @@ select.a-input{cursor:pointer}
   </div>
 </section>
 
-<!-- PAYMENT -->
 <section id="payment">
   <div class="sec-label">Оплата</div>
   <div class="sec-title">УДОБНАЯ ОПЛАТА</div>
@@ -341,7 +332,6 @@ select.a-input{cursor:pointer}
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" style="background:var(--dark);border-top:1px solid var(--border)">
   <div class="sec-label">Контакты</div>
   <div class="sec-title">НАЙДИ НАС</div>
@@ -352,7 +342,7 @@ select.a-input{cursor:pointer}
       <div class="c-item"><div class="c-icon">🕐</div><div><div class="c-label">Режим работы</div><div class="c-val" id="siteHours">Пн–Вс: 9:00 – 20:00</div></div></div>
       <div class="wa-row">
         <a id="waLink" href="https://wa.me/77089866873" class="wa-btn wa" target="_blank">💬 WhatsApp</a>
-        <a id="tgLink" href="https://wa.me/77089866873" class="wa-btn tg" target="_blank">✈️ Telegram</a>
+        <a id="tgLink" href="https://t.me/+77089866873" class="wa-btn tg" target="_blank">✈️ Telegram</a>
       </div>
     </div>
     <div class="c-form">
@@ -369,7 +359,6 @@ select.a-input{cursor:pointer}
   <div class="foot-copy">© 2025 Vellomaster Караганда. Все права защищены.</div>
 </footer>
 
-<!-- CART -->
 <div class="cart-overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()">
   <div class="cart-panel">
     <div class="cart-hdr"><div class="cart-hdr-t">КОРЗИНА</div><button class="cart-x" onclick="closeCart()">✕</button></div>
@@ -382,7 +371,6 @@ select.a-input{cursor:pointer}
   </div>
 </div>
 
-<!-- ADMIN PANEL -->
 <div class="admin-overlay" id="adminOverlay" onclick="if(event.target===this)closeAdmin()">
   <div class="admin-panel">
     <div class="admin-hdr">
@@ -401,11 +389,7 @@ select.a-input{cursor:pointer}
 <div class="toast" id="toastEl"></div>
 
 <script>
-// ══════════════════════════════════════
-// DATA
-// ══════════════════════════════════════
 const ADMIN_PASS = 'vello2025';
-const PHONE = '77089866873';
 
 let settings = {
   phone: '+7 (708) 986-68-73',
@@ -431,9 +415,6 @@ let currentFilter = 'all';
 let editingId = null;
 let uploadedImgUrl = '';
 
-// ══════════════════════════════════════
-// PRODUCTS
-// ══════════════════════════════════════
 function renderProducts(filter) {
   currentFilter = filter;
   const grid = document.getElementById('productGrid');
@@ -453,7 +434,7 @@ function renderProducts(filter) {
             <div class="p-price">${p.price.toLocaleString('ru')} ₸</div>
             ${p.oldPrice ? `<div class="p-old">${p.oldPrice.toLocaleString('ru')} ₸</div>` : ''}
           </div>
-          <button class="p-cart" onclick="addToCart(${p.id})">🛒</button>
+          <button class="p-cart" onclick="addToCart(event, ${p.id})">🛒</button>
         </div>
       </div>
     </div>
@@ -466,10 +447,8 @@ function filterP(cat, btn) {
   renderProducts(cat);
 }
 
-// ══════════════════════════════════════
-// CART
-// ══════════════════════════════════════
-function addToCart(id) {
+function addToCart(event, id) {
+  if (event) event.stopPropagation();
   const p = products.find(x => x.id === id);
   const ex = cart.find(x => x.id === id);
   if (ex) ex.qty++; else cart.push({...p, qty: 1});
@@ -507,9 +486,6 @@ function checkoutWA() {
   window.open(`https://wa.me/${settings.wa}?text=${msg}`, '_blank');
 }
 
-// ══════════════════════════════════════
-// ADMIN AUTH
-// ══════════════════════════════════════
 function showLogin() { document.getElementById('loginOverlay').style.display='flex'; }
 function closeLogin() { document.getElementById('loginOverlay').style.display='none'; }
 
@@ -524,9 +500,6 @@ function doLogin() {
   }
 }
 
-// ══════════════════════════════════════
-// ADMIN PANEL
-// ══════════════════════════════════════
 function openAdmin() {
   document.getElementById('adminOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -541,14 +514,13 @@ function closeAdmin() {
 function aTab(tab, btn) {
   document.querySelectorAll('.a-tab').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  editingId = null;
+  if (tab !== 'edit') editingId = null;
   uploadedImgUrl = '';
   if (tab === 'add') renderAddForm();
   else if (tab === 'products') renderProductList();
   else if (tab === 'settings') renderSettings();
 }
 
-// ── ADD / EDIT FORM ──
 function renderAddForm(editProduct) {
   const p = editProduct || {};
   uploadedImgUrl = p.img || '';
@@ -617,7 +589,9 @@ function handleFile(file) {
     uploadedImgUrl = e.target.result;
     document.getElementById('aImgUrl').value = '';
     const prev = document.getElementById('uploadPreview');
-    prev.outerHTML = `<img src="${uploadedImgUrl}" class="upload-preview" id="uploadPreview">`;
+    if (prev) {
+      prev.outerHTML = `<img src="${uploadedImgUrl}" class="upload-preview" id="uploadPreview">`;
+    }
   };
   reader.readAsDataURL(file);
 }
@@ -639,8 +613,9 @@ function previewUrl(url) {
 function saveProduct() {
   const name = document.getElementById('aName').value.trim();
   const price = parseInt(document.getElementById('aPrice').value);
-  if (!name || !price) { toast('Заполните название и цену!'); return; }
+  if (!name || isNaN(price)) { toast('Заполните название и цену!'); return; }
   const imgUrl = document.getElementById('aImgUrl').value.trim() || uploadedImgUrl;
+  
   const data = {
     name,
     price,
@@ -651,11 +626,14 @@ function saveProduct() {
     emoji: document.getElementById('aEmoji').value.trim() || '🚲',
     img: imgUrl,
   };
+
   if (editingId) {
     const idx = products.findIndex(p=>p.id===editingId);
-    products[idx] = {...products[idx], ...data};
+    if(idx !== -1) {
+      products[idx] = {...products[idx], ...data};
+      toast('✅ Товар обновлён!');
+    }
     editingId = null;
-    toast('✅ Товар обновлён!');
     aTab('products', document.querySelectorAll('.a-tab')[1]);
   } else {
     data.id = Date.now();
@@ -666,7 +644,6 @@ function saveProduct() {
   renderProducts(currentFilter);
 }
 
-// ── PRODUCT LIST ──
 function renderProductList() {
   const body = document.getElementById('adminBody');
   body.innerHTML = `
@@ -694,19 +671,20 @@ function renderProductList() {
 function editProduct(id) {
   editingId = id;
   const p = products.find(x=>x.id===id);
-  aTab('add', document.querySelector('.a-tab'));
+  aTab('edit', document.querySelectorAll('.a-tab')[0]);
   renderAddForm(p);
 }
 
 function deleteProduct(id) {
   if (!confirm('Удалить товар?')) return;
   products = products.filter(x=>x.id!==id);
+  cart = cart.filter(x=>x.id!==id);
+  document.getElementById('cartCount').textContent = cart.reduce((s,x)=>s+x.qty,0);
   renderProducts(currentFilter);
   renderProductList();
   toast('🗑 Товар удалён');
 }
 
-// ── SETTINGS ──
 function renderSettings() {
   const body = document.getElementById('adminBody');
   body.innerHTML = `
@@ -742,17 +720,18 @@ function renderSettings() {
 
 function saveSettings() {
   settings.phone = document.getElementById('sPhone').value.trim();
-  settings.wa = document.getElementById('sWa').value.trim();
+  settings.wa = document.getElementById('sWa').value.trim().replace(/\+/g, '');
   settings.address = document.getElementById('sAddress').value.trim();
   settings.hours = document.getElementById('sHours').value.trim();
-  // Apply to page
+  
   document.getElementById('navPhone').textContent = settings.phone;
   document.getElementById('sitePhone').textContent = settings.phone;
   document.getElementById('sitePhone').href = 'tel:+' + settings.wa;
   document.getElementById('siteAddress').innerHTML = settings.address;
   document.getElementById('siteHours').textContent = settings.hours;
   document.getElementById('waLink').href = `https://wa.me/${settings.wa}`;
-  document.getElementById('tgLink').href = `https://wa.me/${settings.wa}`;
+  document.getElementById('tgLink').href = `https://t.me/+${settings.wa}`;
+  
   const saved = document.getElementById('settingsSaved');
   saved.classList.add('show');
   setTimeout(()=>saved.classList.remove('show'), 2500);
@@ -764,13 +743,9 @@ function changePass() {
   const p2 = document.getElementById('newPass2').value;
   if (!p1) { toast('Введите пароль!'); return; }
   if (p1 !== p2) { toast('Пароли не совпадают!'); return; }
-  // Note: in production use proper auth. This updates in-session only.
   toast('✅ Пароль изменён на эту сессию!');
 }
 
-// ══════════════════════════════════════
-// UTILS
-// ══════════════════════════════════════
 function sendWA() {
   const name = document.getElementById('formName').value || '—';
   const phone = document.getElementById('formPhone').value || '—';
@@ -785,7 +760,6 @@ function toast(msg) {
   setTimeout(()=>el.classList.remove('show'), 3000);
 }
 
-// INIT
 renderProducts('all');
 </script>
 </body>
